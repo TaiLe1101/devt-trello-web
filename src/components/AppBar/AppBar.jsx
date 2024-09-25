@@ -36,6 +36,7 @@ export default function AppBar() {
             component={TrelloLogoIcon}
             inheritViewBox
             sx={{ color: "primary.main" }}
+            fontSize="small"
           />
           <Typography
             variant="span"
@@ -51,7 +52,7 @@ export default function AppBar() {
         <Templates />
         <Button variant="outlined">Create</Button>
       </Box>
-      <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+      <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
         <TextField
           id="outlined-search"
           label="Search..."
@@ -61,12 +62,12 @@ export default function AppBar() {
         <ModeSelect />
         <Tooltip title="Notifications">
           <Badge color="secondary" variant="dot" sx={{ cursor: "pointer" }}>
-            <NotificationsNoneIcon />
+            <NotificationsNoneIcon sx={{ color: "primary.main" }} />
           </Badge>
         </Tooltip>
         <Tooltip title="Help">
           <Badge color="secondary" sx={{ cursor: "pointer" }}>
-            <HelpOutlineIcon />
+            <HelpOutlineIcon sx={{ color: "primary.main" }} />
           </Badge>
         </Tooltip>
         <Profiles />
