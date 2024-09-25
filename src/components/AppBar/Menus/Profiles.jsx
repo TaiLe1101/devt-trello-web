@@ -35,7 +35,7 @@ export default function Profiles() {
           }}
         >
           <Avatar
-            sx={{ width: 30, height: 30 }}
+            sx={{ width: 36, height: 36 }}
             alt="DevT"
             src="https://avatars.githubusercontent.com/u/96537438?s=96&v=4"
           />

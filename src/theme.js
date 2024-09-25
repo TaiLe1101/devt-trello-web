@@ -1,4 +1,3 @@
-import { cyan, deepOrange, orange, teal } from "@mui/material/colors";
 import { createTheme } from "@mui/material/styles";
 
 const FONT_SIZE = "0.875rem";
@@ -10,16 +9,10 @@ const theme = createTheme({
   },
   colorSchemes: {
     light: {
-      palette: {
-        primary: teal,
-        secondary: deepOrange,
-      },
+      palette: {},
     },
     dark: {
-      palette: {
-        primary: cyan,
-        secondary: orange,
-      },
+      palette: {},
     },
   },
   components: {
@@ -31,11 +24,11 @@ const theme = createTheme({
             height: "8px",
           },
           "*::-webkit-scrollbar-thumb": {
-            backgroundColor: "#dbc3c7",
+            backgroundColor: "#dcdde1",
             borderRadius: "8px",
           },
           "*::-webkit-scrollbar-thumb:hover": {
-            backgroundColor: "#00b894",
+            backgroundColor: "white",
           },
         },
       },
@@ -49,29 +42,25 @@ const theme = createTheme({
     },
     MuiInputLabel: {
       styleOverrides: {
-        root: ({ theme }) => ({
-          color: theme.palette.primary.main,
+        root: {
           fontSize: FONT_SIZE,
-        }),
+        },
       },
     },
     MuiOutlinedInput: {
       styleOverrides: {
-        root: ({ theme }) => ({
-          color: theme.palette.primary.main,
+        root: {
           fontSize: FONT_SIZE,
-          ".MuiOutlinedInput-notchedOutline": {
-            borderColor: theme.palette.primary.light,
-          },
-          "&:hover": {
-            ".MuiOutlinedInput-notchedOutline": {
-              borderColor: theme.palette.primary.main,
-            },
-          },
           "& fieldset": {
+            borderWidth: "0.5px !important",
+          },
+          "&:hover fieldset": {
             borderWidth: "1px !important",
           },
-        }),
+          "&.Mui-focused fieldset": {
+            borderWidth: "1px !important",
+          },
+        },
       },
     },
   },
