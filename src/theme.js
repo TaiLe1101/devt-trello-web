@@ -1,18 +1,23 @@
+import { cyan, deepOrange, orange, teal } from "@mui/material/colors";
 import { createTheme } from "@mui/material/styles";
-import { red } from "@mui/material/colors";
 
-// Create a theme instance.
 const theme = createTheme({
-  palette: {
-    mode: "light",
-    primary: {
-      main: "#556cd6",
+  trello: {
+    appBarHeight: "48px",
+    boardBarHeight: "58px",
+  },
+  colorSchemes: {
+    light: {
+      palette: {
+        primary: teal,
+        secondary: deepOrange,
+      },
     },
-    secondary: {
-      main: "#19857b",
-    },
-    error: {
-      main: red.A400,
+    dark: {
+      palette: {
+        primary: cyan,
+        secondary: orange,
+      },
     },
   },
 });

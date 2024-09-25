@@ -1,15 +1,9 @@
-import Button from "@mui/material/Button";
-import AccessAlarmIcon from "@mui/icons-material/AccessAlarm";
+import Board from "./pages/Boards/_id.jsx";
 
-function App() {
+export default function App() {
   return (
     <>
-      <p>Hello</p>
-      <Button variant="contained" startIcon={<AccessAlarmIcon />}>
-        Hello World
-      </Button>
+      <Board />
     </>
   );
 }
-
-export default App;
