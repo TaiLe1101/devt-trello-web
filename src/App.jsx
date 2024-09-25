@@ -3,9 +3,12 @@ import AccessAlarmIcon from "@mui/icons-material/AccessAlarm";
 
 function App() {
   return (
-    <Button variant="contained" startIcon={<AccessAlarmIcon />}>
-      Hello World
-    </Button>
+    <>
+      <p>Hello</p>
+      <Button variant="contained" startIcon={<AccessAlarmIcon />}>
+        Hello World
+      </Button>
+    </>
   );
 }
 
