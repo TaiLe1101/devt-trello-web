@@ -67,6 +67,15 @@ const theme = createTheme({
         },
       },
     },
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          "&.MuiTypography-body1": {
+            fontSize: FONT_SIZE,
+          },
+        },
+      },
+    },
   },
 });
 
