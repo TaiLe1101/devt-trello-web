@@ -34,7 +34,12 @@ export default [
         { allowConstantExport: true },
       ],
       "no-unused-vars": "warn",
+      "no-restricted-imports": [
+        "error",
+        {
+          patterns: ["@mui/*/*/*"],
+        },
+      ],
     },
   },
 ];
-
