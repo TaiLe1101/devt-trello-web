@@ -7,10 +7,10 @@
     "node": "v20.17.0"
   },
   "scripts": {
-    "dev": "vite --host",
+    "dev": "vite",
     "build": "vite build --base=./",
     "lint": "eslint .",
-    "preview": "vite preview --host",
+    "preview": "vite preview",
     "start": "vite build --base=./ && vite preview"
   },
   "dependencies": {
