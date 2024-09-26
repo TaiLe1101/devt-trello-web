@@ -11,6 +11,7 @@ import Tooltip from "@mui/material/Tooltip";
 import Button from "@mui/material/Button";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
 
+import { capitalizeFirstLetter } from "~/utils/formatters";
 const MENU_STYLES = {
   color: "white",
   bgcolor: "transparent",
@@ -25,7 +26,7 @@ const MENU_STYLES = {
   },
 };
 
-export default function BoardBar() {
+export default function BoardBar({ board }) {
   return (
     <Box
       sx={{
@@ -37,7 +38,6 @@ export default function BoardBar() {
         justifyContent: "space-between",
         gap: 2,
         overflowX: "auto",
-        borderBottom: "1px solid white",
         bgcolor: (theme) =>
           theme.palette.mode === "dark" ? "#34495e" : "#1976d2",
         "&::-webkit-scrollbar-track": {
@@ -48,13 +48,13 @@ export default function BoardBar() {
       <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
         <Chip
           icon={<DashboardIcon />}
-          label="DevT Trello"
+          label={board?.title}
           clickable
           sx={MENU_STYLES}
         />
         <Chip
           icon={<VpnLockIcon />}
-          label="Public/Private Workspace"
+          label={capitalizeFirstLetter(board?.type)}
           clickable
           sx={MENU_STYLES}
         />
