@@ -10,7 +10,7 @@
     "dev": "vite --host --port=3000",
     "build": "vite build --base=./",
     "lint": "eslint .",
-    "preview": "vite preview --port=3000",
+    "preview": "vite preview --host --port=3000",
     "start": "vite build --base=./ && vite preview --port=3000"
   },
   "dependencies": {
